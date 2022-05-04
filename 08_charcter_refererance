@@ -1,0 +1,23 @@
+There are a few characters you cant write normally whether it is cause it can break your code like <, >, & or 
+your usual keyyboard doesnt have proper keys for that like copyright symbol, &nbsp(not break space) and for those
+we use character entity referance. A simple google result can give us what type of symbol we want as there
+are hundreds of them
+
+Also all of them starts with & and ends with ;, its a common trope.
+Basic common ones are :
+
+1. &Tab; &#x00009; &#9;= For a single space;
+2. &NewLine; &#x0000A; &#10; = For a new line;
+3. ! = &excl; &#x00021; &#33; (anyone will do)
+4. $ = &dollar; &#x00024; &#36; (again 3 symbols)
+5. < = &lt; &LT; &#x0003C; &#60; 
+6. > = >&gt; &GT;&#x0003E; &#62;
+7. @ = &commat; &#x00040; &#64;
+
+some common ones which arent in our keyboard.
+
+8. © = &copy; &COPY; &#x000A9; &#169; ( its copyright symbol)
+9. ® = &reg; &circledR; &REG; &#x000AE; &#174;
+10. Å = &Aring; &#x000C5; &#197;
+
+And so on....link ( https://www.htmlquick.com/reference/character-entity-reference.html )

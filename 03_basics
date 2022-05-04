@@ -1,0 +1,16 @@
+Before 1997, it wasnt driven by any standard which means every browser has supports or rather takes a certain tags differently and after that came HTML4.0 which was introduced by w3c(world wide web consortium) and browsers somewhat listened to and then they updated it to HTML4.01 but still browser were still deciding what standards to use and then 23c made XHTML 1.0 in 2000 which was influenced by XML ( a very clear but rigid markup language). But browser vendors banded together to create an another language called WHATWG HTML(web hypertext Application technology group) in 2004. In 2007, WHATWG and W3C started working together and they made HTML 5 in 2011 which use now.
+
+
+Here we should know that most of these fucntions are gonna most of these browsers. Like its possible that some are just gonna work on specific browser or some are not gonna work on some browsers So if we really want such functionality we can just ignore that browser. Like we need to add vidoe in out site but opera wont allow it if we dont do it his way so since it has just 1.5% market share. We can just ignore it in worst case.
+Currently chrome takes 80% of market while edge takes around 6%.
+
+There are 2 groups who manage html rm. w3c manages HTML5 and WHATWG manages HTML(evolve).
+
+There are many tags in HTML
+p stand for paragraph.<p>-opening tag, </p>-Closing tag. So p alone is an element while <p> is a tag and content is written inside the <p> </p>
+Most of these have an opening tag and a closing tag like p.
+
+<br> - Used for line break and <hr> - horizontal rule are two of the tags with no closing tag.
+
+Every HTML tag has a predifined attribute.
+<p id="my id"></p> , the value could be either in "" or '', it both the same but we still use "" cause sometimes values inside the code also contain '' such as <p> onclick="alert('hi')"</p> something like this and its also best give proper spacing in these things such as between element name and attribute name. In old style XML, we could have used a tag notation <p/> for a tag which will signify that this tag is there but it doesnt contain anything for now but we can add it later. HTML5 doesnt allow it aif you have a tag that can store value then it must does it hence we use <p></p> with zero spaces to signify that.

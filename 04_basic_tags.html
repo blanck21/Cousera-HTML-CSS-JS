@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- Now this declration was used in past to basically tell the browser that it is a HTML langugae you have to render.
+There were some sites which were compliant to browser standards while some didnt, Non compliant pages were rendered in what
+we call a quirk mode while compliant pages weere rendered in what we call standards mode. And if we dont use it then the
+browser is gonnna take that HTML document as something which doenst follow HTML standards and it can create problems. -->
+
+<html lang="fr">
+<!-- HTML tags tells us its the beginning of the code and lang attribute tells the language. -->
+<head>
+<!-- head tag describes authors description of the page, page title and whatever external resoures are needed to render the html
+document. It contains some meta data about the main content. -->
+    <meta charset="utf-8">
+<!-- We just told to know what the character set is. It makes codes more sophisticated and UTF-8 is backwards compatible
+with ASCII. UTF-8 is the preferred encoding for e-mail and web pages oppose to UTF-16 which we prefer in major operating system 
+and enviroment. -->
+    <title>For web development video</title>
+<!-- title tag is Required tag or HTML would be invalid -->
+</head>
+<body>
+    This is something with no heading and paragraph. hence it is slightly different. 
+    <h1>This is something with heading hence it is slightly different from last one</h1>
+<!-- Bold character is a common sign. -->
+</body>
+<!-- body tag is root of all content visible to the user which includes headings and paragraps and break lines etc. We
+sometimes call it as a viewport cause of it. -->
+</html>
+<!-- We should choose to use w3 validator site to check if our site is following the standards of current HTML 5 or not. -->
+
+<!-- So as we can see here that all we are doing is nesting one html tag into another like we we nested title tag in head. One rule
+to remember is that we have to close the last opened tag before we close the parent tag. -->
+ 
+<!-- So like Head tag is a parent tag and title tag is children (sort of) so <head> <title></title></head> is correct but if you
+dont close the last opened tag which will be title tag here before you close the parent tag which is gonna be head tag then 
+the HTML document becomes invalid. It will look something like this btw, <head><title></head></title> so as we can see, we didnt
+closed the title tag before we close its parent head tag and hence HTML codes becomes invalid. -->
+
+<!-- Last but not least point is that, HTML code always renders sequencely ane hence the doctype will get rendered first and then the 
+HTML tag and head and so on untill it hits the last HTML tag. -->

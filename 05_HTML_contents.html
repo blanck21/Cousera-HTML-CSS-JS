@@ -1,0 +1,83 @@
+<!-- We try to understand which element is gonna get nested into which element. Prior to HTML5, it was
+devided in either Block level element or inline element but HTML5 devided in 7 parts in total.
+Interactive,Flow,Phrasing,Heading,Embedded,metadata,sectioning.  -->
+
+<!-- Block-level elements - It renders to begin on a new line(by default), we can change this property btw, it may 
+contain other block level elements and even inline elements. They roughly translates to flow content.
+inline elements- this on the other hand renders on the same line(by default) and may contain other inline element
+but no block-level elements. They roughly translates to phrasing content. -->
+
+
+<!-- While HTML5 made the disctinction made more complex, this kind of notation is still somewhat usable as it aligns
+well with existing CSS rules. -->
+
+<!-- ##EXAMPLE 1 -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Div and span elements</title>
+</head>
+<body>
+    <div>DIV1 =  Some DIV 1 content here</div>
+    <div>DIV2 =  Right after DIV 2</div>
+    <span>SPAN1 = Its following right after DIV2</span>
+    <div>DIV3 =  It is right after SPAN1
+        <span>SPAN2 = Inside the DIV3</span>
+        countinued content of DIV3
+    </div>
+</body>
+</html>
+
+<!-- so div and span tag is basically a part of block level elemets and is part of flow content now. Span tag is a part of inline elements and now part of phrasing content
+while div tag isnt. -->
+
+<!-- Also even if put the entire code in one line then its not gonna matter and hence the above code of example 1 is same as the example 2. -->
+
+<!-- ##EXAMPLE 2 -->
+
+<!-- <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Div and span elements</title>
+</head>
+<body>
+    <div>DIV1 =  Some DIV 1 content here</div><div>DIV2 =  Right after DIV 2</div><span>SPAN1 = Its following right after DIV2</span><div>DIV3 =  It is right after SPAN1<span>SPAN2 = Inside the DIV3</span>countinued content of DIV3</div>
+</body>
+</html> -->
+
+<!-- This is how the code gonna look in website -->
+
+<!-- DIV1 = Some DIV 1 content here
+DIV2 = Right after DIV 2
+SPAN1 = Its following right after DIV2
+DIV3 = It is right after SPAN1 SPAN2 = Inside the DIV3 countinued content of DIV3
+ -->
+
+<!-- Now as we can see here, first DIV1 has its own line and DIV2 has also its own line and while SPAN1 want to be in same line as the last line which is DIV2 but DIV2
+will push it down and next DIV3 will go to a new line. SPAN2 on the other hand will remain on same line as DIV3 as it is inside the DIV3 and the next code is gonna
+commence. -->
+
+<!-- ##EXAMPLE 3 -->
+
+<!-- <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Div and span elements</title>
+</head>
+<body>
+    <div>DIV1 =  Some DIV 1 content here</div>
+    <div>DIV2 =  Right after DIV 2</div>
+    <span>SPAN1 = Its following right after DIV2</span>
+    <div>DIV3 =  It is right after SPAN1
+        <span>SPAN2 = Inside the DIV3 <div>Inside the SPAN2</div></span>
+        countinued content of DIV3
+    </div>
+</body>
+</html> -->
+
+<!-- Now this code is wrong and there is just slight difference between example 1 and example 3 which is that SPAN3 tried to take the DIV4 inside it which isnt
+by standards as SPAN cant take DIV as a child. DIV tag needs a new line when initiated and its not possible here. -->

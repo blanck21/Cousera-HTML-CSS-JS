@@ -1,0 +1,149 @@
+<!-- Few charcters we should never use in our code are <, >, &. These characters are gonna be taken as a 
+command rather than just a text as we use <,> in tags and & in numerous other places as we wil see. -->
+
+<!-- So we will character referance for these symbols. -->
+
+<!-- ##EXAMPLE 1 -->
+
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title> HTML entities </title>
+</head>
+<body>
+    <h1>Dont be bound by morals. Never <once in life  &i have thought to just >live by, its always a journey </h1>
+    <!-- <h1>Dont be bound by morals. Never < once in life  &i have thought to just > live by, its always a journey </h1> -->
+<!-- So if we do the first one then the entire middle paragraph will get cut off from start of < to > and the reason is that
+the moment the browser is gonna see a element attached with <, its gonna assume its a tag and hence it will try to
+read it but will fail to do so and only when it reaches >, then its gonna start rendering normally. everything in 
+between is either a tag or element or a attribute. We can try the second one and not connect any symbol with < but
+its just a bad variable we should avoid in general. -->
+
+    <p >A beautiful quote = Life and death is nature’s law. All living beings are equal, and everyone has their right to 
+      survive and be killed. There might be royalty and lower beings, but in face of death, a person’s death is no
+      different from pig’s, what’s the difference? They’re both dead. 
+      
+      <br><br> 
+      
+      Another beautiful quote = Not wanting to be trampled on, there are two ways. One is to become strong, 
+      strong until no one dares to step on you. Another is to turn into dog shit, something no one would want to step on
+
+      <br><br>
+      
+      This quote = He was still expressionless, he continued to move forward relentlessly.
+      I had once screamed, gradually, I lost my voice.
+      
+      I had once cried, gradually, I lost my tears.
+      
+      I had once grieved, gradually, I became able to withstand everything.
+      
+      I had once rejoiced, gradually, I became unmoved by the world.
+      
+      And now!
+      
+      All I have left is an expressionless face, my gaze is as tough as a monolith, only perseverance remains in my heart.
+      
+      This is my own, an insignificant character — Perseverance! </p>
+      <p> Reverend insanity, A master piece novel.</p>
+<!-- <br> tag is a break line btw, one <br> means one line break and we can increase it. -->
+</body>
+</html>
+
+<!-- ##EXAMPLE 2 -->
+
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title> HTML entities </title>
+</head>
+<body>
+    <h1>Dont be bound by morals. Never &lt;once in life  &amp;i have thought to just &gt;live by, its always a journey </h1>
+<!-- So as we can see, we connected a symbol with < without causing any break whatsoever.    -->
+
+    <p >A beautiful quote = Life and death is nature’s law. All living beings are equal, and everyone has their right to 
+      survive and be killed. There might be royalty and lower beings, but in face of death, a person’s death is no
+      different from pig’s, what’s the difference? They’re both dead. 
+      
+      <br><br> 
+      
+      Another beautiful quote = Not wanting to be trampled on, there are two ways. One is to become strong, 
+      strong until no one dares to step on you. Another is to turn into dog shit, something no one would want to step on
+
+      <br><br>
+      
+      This quote = He was still expressionless, he continued to move forward relentlessly.
+      I had once screamed, gradually, I lost my voice.
+      
+      I had once cried, gradually, I lost my tears.
+      
+      I had once grieved, gradually, I became able to withstand everything.
+      
+      I had once rejoiced, gradually, I became unmoved by the world.
+      
+      And now!
+      
+      All I have left is an expressionless face, my gaze is as tough as a monolith, only&nbsp;perseverance&nbsp;remains in my heart.
+      
+      This is my own, an insignificant character — Perseverance! </p>
+    <!-- So we use it for to have words together and some people use it for having spaces which isnt advisable. We can use span 
+    table and other tags for that but not &nbsp; -->
+      <p> Reverend insanity, A master piece novel. &copy;</p>
+<!-- Now &copy; is a copyright symbol i used in last paragraph. -->
+</body>
+</html>
+
+
+<!-- ##EXAMPLE 3 -->
+
+<!-- Also if we change the utf-8 in beginning to utf-16 which is used to email and all that, it will break and some text
+will become incoherent. -->
+
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-16">
+    <title> HTML entities </title>
+</head>
+<body>
+    <h1>Dont be bound by morals. Never &lt;once in life  &amp;i have thought to just &gt;live by, its always a journey </h1>
+
+    <p> &quot; A beautiful quote = Life and death is nature’s law. All living beings are equal, and everyone has their right to 
+      survive and be killed. There might be royalty and lower beings, but in face of death, a person’s death is no
+      different from pig’s, what’s the difference? They’re both dead. 
+      
+      <br><br> 
+      
+      Another beautiful quote = Not wanting to be trampled on, there are two ways. One is to become strong, 
+      strong until no one dares to step on you. Another is to turn into dog shit, something no one would want to step on
+
+      <br><br>
+      
+      This quote = He was still expressionless, he continued to move forward relentlessly.
+      I had once screamed, gradually, I lost my voice.
+      
+      I had once cried, gradually, I lost my tears.
+      
+      I had once grieved, gradually, I became able to withstand everything.
+      
+      I had once rejoiced, gradually, I became unmoved by the world.
+      
+      And now!
+      
+      All I have left is an expressionless face, my gaze is as tough as a monolith, only&nbsp;perseverance&nbsp;remains in my heart.
+      
+      This is my own, an insignificant character — Perseverance! &quot;</p>
+      <p> Reverend insanity, A master piece novel. &copy;</p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
